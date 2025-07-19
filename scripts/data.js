@@ -107,11 +107,11 @@ export const carInventory = [
         fuelType: 'Gasoline',
         engine: '2.0L Turbo 4-cylinder',
         images: [
-            'https://source.unsplash.com/random/800x600/?bmw+3series+1',
-            'https://source.unsplash.com/random/800x600/?bmw+3series+2',
-            'https://source.unsplash.com/random/800x600/?bmw+3series+3',
-            'https://source.unsplash.com/random/800x600/?bmw+3series+4',
-            'https://source.unsplash.com/random/800x600/?bmw+3series+5'
+            './pictures/stock/honda/vezel/xhunt/vb1.jpg',
+              './pictures/stock/honda/vezel/xhunt/vb2.jpg',
+               './pictures/stock/honda/vezel/xhunt/vb3.jpg',
+                './pictures/stock/honda/vezel/xhunt/vb4.jpg',
+                 './pictures/stock/honda/vezel/xhunt/vb5.jpg',
         ]
     }, {
         make: 'BMW',
@@ -125,11 +125,11 @@ export const carInventory = [
         fuelType: 'Gasoline',
         engine: '2.0L Turbo 4-cylinder',
         images: [
-            'https://source.unsplash.com/random/800x600/?bmw+3series+1',
-            'https://source.unsplash.com/random/800x600/?bmw+3series+2',
-            'https://source.unsplash.com/random/800x600/?bmw+3series+3',
-            'https://source.unsplash.com/random/800x600/?bmw+3series+4',
-            'https://source.unsplash.com/random/800x600/?bmw+3series+5'
+             './pictures/stock/honda/vezel/xhunt/vb1.jpg',
+              './pictures/stock/honda/vezel/xhunt/vb2.jpg',
+               './pictures/stock/honda/vezel/xhunt/vb3.jpg',
+                './pictures/stock/honda/vezel/xhunt/vb4.jpg',
+                 './pictures/stock/honda/vezel/xhunt/vb5.jpg',
         ]
     },
     {
@@ -144,11 +144,11 @@ export const carInventory = [
         fuelType: 'Gasoline',
         engine: '2.0L Turbo 4-cylinder',
         images: [
-            'https://source.unsplash.com/random/800x600/?bmw+3series+1',
-            'https://source.unsplash.com/random/800x600/?bmw+3series+2',
-            'https://source.unsplash.com/random/800x600/?bmw+3series+3',
-            'https://source.unsplash.com/random/800x600/?bmw+3series+4',
-            'https://source.unsplash.com/random/800x600/?bmw+3series+5'
+            './pictures/stock/honda/vezel/xhunt/vb1.jpg',
+              './pictures/stock/honda/vezel/xhunt/vb2.jpg',
+               './pictures/stock/honda/vezel/xhunt/vb3.jpg',
+                './pictures/stock/honda/vezel/xhunt/vb4.jpg',
+                 './pictures/stock/honda/vezel/xhunt/vb5.jpg',
         ]
     }
 ];
