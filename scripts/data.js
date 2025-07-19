@@ -144,11 +144,11 @@ export const carInventory = [
         fuelType: 'Gasoline',
         engine: '2.0L Turbo 4-cylinder',
         images: [
-            './pictures/stock/honda/vezel/xhunt/vb1.jpg',
-              './pictures/stock/honda/vezel/xhunt/vb2.jpg',
-               './pictures/stock/honda/vezel/xhunt/vb3.jpg',
-                './pictures/stock/honda/vezel/xhunt/vb4.jpg',
-                 './pictures/stock/honda/vezel/xhunt/vb5.jpg',
+           './pictures/stock/toyota/raize/hybrid/z/wz1.jpg',
+            './pictures/stock/toyota/raize/hybrid/z/wz2.jpg',
+            './pictures/stock/toyota/raize/hybrid/z/wz3.jpg',
+            './pictures/stock/toyota/raize/hybrid/z/wz4.jpg',
+            './pictures/stock/toyota/raize/hybrid/z/wz5.jpg'
         ]
     }
 ];
