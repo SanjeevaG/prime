@@ -132,7 +132,7 @@ function mainContent() {
     const carGrid = document.createElement('div');
     carGrid.className = 'car-grid';
 
-    carInventory.slice(0, 5).forEach(car => {
+    carInventory.slice(0, 20).forEach(car => {
         const carCard = document.createElement('div');
         carCard.className = 'car-card';
 
@@ -174,7 +174,7 @@ function mainContent() {
 
     featuredSection.append(featuredTitle, carGrid);
 
-    container.append(searchSection, newsSection, featuredSection);
+    container.append(searchSection,  featuredSection ,newsSection,);
 
     return container;
 }
