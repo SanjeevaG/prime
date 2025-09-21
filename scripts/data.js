@@ -99,20 +99,20 @@ export const carInventory = [
     {
         make: 'Honda',
         model: 'Vezel Z ',
-        year: '2025',
+        year: '2024',
         type: 'SUV',
-        price: '4.5 Mill Yen',
-        mileage: '0 kms',
+        price: 'Rs 17.5million',
+        mileage: '10000 kms',
         color: 'White',
         transmission: 'Automatic',
         fuelType: 'Hybrid',
         engine: '1500cc',
         images: [
-            './pictures/stock/honda/vezel/vezelZ/vz1.jpeg',
-            '/pictures/stock/honda/vezel/vezelZ/vz2.jpeg',
-            '/pictures/stock/honda/vezel/vezelZ/vz3.jpeg',
-            '/pictures/stock/honda/vezel/vezelZ/vz4.jpeg',
-            '/pictures/stock/honda/vezel/vezelZ/vz5.jpeg',
+            './pictures/stock/honda/vezel/vezelZ/vz11.jpeg',
+            './pictures/stock/honda/vezel/vezelZ/vz12.jpeg',
+            './pictures/stock/honda/vezel/vezelZ/vz13.jpeg',
+            './pictures/stock/honda/vezel/vezelZ/vz14.jpeg',
+            './pictures/stock/honda/vezel/vezelZ/vz15.jpeg'
             
         ]
     }, {
@@ -120,18 +120,23 @@ export const carInventory = [
         model: 'Vezel Z Play',
         year: '2025',
         type: 'SUV',
-        price: '5.3 Mill Yen',
+        price: 'Rs 24.5million',
         mileage: '0 kms',
         color: 'White',
         transmission: 'Automatic',
         fuelType: 'Hybrid',
         engine: '1500cc',
         images: [
-            './pictures/stock/honda/vezel/Zplay/vzp1.jpeg',
-            './pictures/stock/honda/vezel/Zplay/vzp2.jpeg',
-            './pictures/stock/honda/vezel/Zplay/vzp3.jpeg',
-            './pictures/stock/honda/vezel/Zplay/vzp4.jpeg',
-            './pictures/stock/honda/vezel/Zplay/vz5.jpeg',            
+            './pictures/stock/honda/vezel/Zplay/vzp11.jpg',
+            './pictures/stock/honda/vezel/Zplay/vzp12.jpg',
+            './pictures/stock/honda/vezel/Zplay/vzp13.jpg',
+            './pictures/stock/honda/vezel/Zplay/vzp14.jpg',
+            './pictures/stock/honda/vezel/Zplay/vzp15.jpg',
+
+
+
+
+                       
         ]
     }
     ,
