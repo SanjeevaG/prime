@@ -4,8 +4,8 @@ export const carInventory = [
         model: 'Raize Z',
         year: '2025',
         type: 'SUV',
-        price: '3.325 Mill Yen',
-        mileage: '2000kms',
+        price: 'Rs 1400000',
+        mileage: '0kms',
         color: 'Pearl',
         transmission: 'Automatic',
         fuelType: 'Hybrid',
@@ -16,6 +16,84 @@ export const carInventory = [
             './pictures/stock/toyota/raize/hybrid/z/wz3.jpg',
             './pictures/stock/toyota/raize/hybrid/z/wz4.jpg',
             './pictures/stock/toyota/raize/hybrid/z/wz5.jpg'
+        ]
+    },
+    {
+        make: 'Toyota',
+        model: 'Raize G',
+        year: '2023',
+        type: 'SUV',
+        price: 'Rs 1150000',
+        mileage: '9000kms',
+        color: 'Pearl',
+        transmission: 'Automatic',
+        fuelType: 'Petrol',
+        engine: '990cc',
+        images: [
+            './pictures/stock/toyota/raize/nonhybrid/g/rg21.jpg',
+            './pictures/stock/toyota/raize/nonhybrid/g/rg22.jpg',
+            './pictures/stock/toyota/raize/nonhybrid/g/rg25.jpg'
+           
+        ]
+    },
+    {
+        make: 'Toyota',
+        model: 'Raize G',
+        year: '2023',
+        type: 'SUV',
+        price: 'Rs 1150000',
+        mileage: '15000kms',
+        color: 'Pearl',
+        transmission: 'Automatic',
+        fuelType: 'Petrol',
+        engine: '990cc',
+        images: [
+            './pictures/stock/toyota/raize/nonhybrid/g/rg11.jpg',
+            './pictures/stock/toyota/raize/nonhybrid/g/rg12.jpg',
+            './pictures/stock/toyota/raize/nonhybrid/g/rg13.jpg',
+            './pictures/stock/toyota/raize/nonhybrid/g/rg14.jpg',
+            './pictures/stock/toyota/raize/nonhybrid/g/rg15.jpg'
+        ]
+    },
+        {
+        make: 'Toyota',
+        model: 'Prado TX 150',
+        year: '2023',
+        type: 'SUV 4X4',
+        price: 'Rs 53000000',
+        mileage: '11000kms',
+        color: 'Pearl',
+        transmission: 'Automatic',
+        fuelType: 'Diesel',
+        engine: '2700cc',
+        images: [
+            './pictures/stock/toyota/prado/150/p15011.jpg',
+            './pictures/stock/toyota/prado/150/p15012.jpg',
+            './pictures/stock/toyota/prado/150/p15013.jpg',
+            './pictures/stock/toyota/prado/150/p15014.jpg',
+            './pictures/stock/toyota/prado/150/p15015.jpg'
+            
+        
+        ]
+    },
+           {
+        make: 'Toyota',
+        model: 'Hilux Revo',
+        year: '2025',
+        type: 'Pickup 4X4',
+        price: 'Rs 28000000',
+        mileage: '0kms',
+        color: 'Black/Any colour',
+        transmission: 'Automatic',
+        fuelType: 'Diesel',
+        engine: '2400cc',
+        images: [
+            './pictures/stock/toyota/hilux/rocco/hrt14.jpg',
+            './pictures/stock/toyota/hilux/rocco/hrt11.jpg',
+            './pictures/stock/toyota/hilux/rocco/hrt12.jpg',
+            './pictures/stock/toyota/hilux/rocco/hrt13.jpg',
+            './pictures/stock/toyota/hilux/rocco/hrt15.jpg'
+        
         ]
     },
     {
