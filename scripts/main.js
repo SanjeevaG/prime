@@ -4,7 +4,7 @@ function mainContent() {
     const container = document.createElement('div');
     container.className = 'container';
 
-    // Inject CSS ONLY for news section
+    // --- Inject CSS ONLY for news section ---
     const style = document.createElement('style');
     style.textContent = `
         .news-section {
@@ -39,7 +39,7 @@ function mainContent() {
     `;
     document.head.appendChild(style);
 
-    // Search Section (same)
+    // --- Search Section ---
     const searchSection = document.createElement('section');
     searchSection.className = 'search-section';
 
@@ -48,6 +48,8 @@ function mainContent() {
 
     const carMakeSelect = document.createElement('select');
     carMakeSelect.id = 'car-make';
+
+    // ✅ Unique car makes
     const makes = ['', ...new Set(carInventory.map(car => car.make))];
     makes.forEach(make => {
         const option = document.createElement('option');
@@ -60,6 +62,7 @@ function mainContent() {
     carModelSelect.id = 'car-model';
     carModelSelect.disabled = true;
 
+    // ✅ Make -> Model dropdown (unique)
     carMakeSelect.addEventListener('change', (e) => {
         const selectedMake = e.target.value;
         carModelSelect.innerHTML = '';
@@ -74,12 +77,16 @@ function mainContent() {
                 .filter(car => car.make.toLowerCase() === selectedMake)
                 .map(car => car.model);
 
-            models.forEach(model => {
+            // ✅ Remove duplicates using Set
+            const uniqueModels = [...new Set(models)];
+
+            uniqueModels.forEach(model => {
                 const option = document.createElement('option');
                 option.value = model.toLowerCase();
                 option.textContent = model;
                 carModelSelect.appendChild(option);
             });
+
             carModelSelect.disabled = false;
         } else {
             carModelSelect.disabled = true;
@@ -97,7 +104,7 @@ function mainContent() {
 
     searchSection.append(searchTitle, carMakeSelect, carModelSelect, searchInput, searchButton);
 
-    // News Section
+    // --- News Section ---
     const newsSection = document.createElement('section');
     newsSection.className = 'news-section';
 
@@ -122,7 +129,7 @@ function mainContent() {
 
     newsSection.append(newsTitle, newsList);
 
-    // Featured Section (unchanged)
+    // --- Featured Section ---
     const featuredSection = document.createElement('section');
     featuredSection.className = 'featured-section';
 
@@ -154,6 +161,7 @@ function mainContent() {
         carCard.append(carImage, carInfo);
         carGrid.appendChild(carCard);
 
+        // --- Dynamic car page load ---
         carCard.addEventListener('click', async () => {
             try {
                 const carModule = await import('./car.js');
@@ -174,7 +182,8 @@ function mainContent() {
 
     featuredSection.append(featuredTitle, carGrid);
 
-    container.append(searchSection,  featuredSection ,newsSection,);
+    // --- Append everything ---
+    container.append(searchSection, featuredSection, newsSection);
 
     return container;
 }
