@@ -501,25 +501,27 @@ button:hover {
 /* These styles will only affect the stock page */
 
 .stock-page {
-  padding: 2rem;
+  padding: 1.5rem;
   max-width: 1400px;
   margin: 0 auto;
 }
 
 .stock-page h1 {
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
   color: #333;
 }
 
+/* ✅ Compact grid — more cars visible */
 .vehicle-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 0.5rem;
 }
 
+/* ✅ Smaller vehicle card design */
 .vehicle-card {
   background: white;
   border-radius: 8px;
@@ -529,13 +531,14 @@ button:hover {
 }
 
 .vehicle-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* ✅ Smaller image container */
 .vehicle-image-container {
   width: 100%;
-  height: 200px;
+  height: 130px;
   overflow: hidden;
 }
 
@@ -551,24 +554,25 @@ button:hover {
 }
 
 .vehicle-details {
-  padding: 1.5rem;
+  padding: 0.8rem;
 }
 
 .vehicle-details h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
   color: #222;
 }
 
+/* ✅ Compact text layout */
 .specs-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
+  grid-template-columns: 1fr;
+  gap: 0.3rem;
 }
 
 .specs-grid p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #555;
 }
 
@@ -579,32 +583,72 @@ button:hover {
 .no-vehicles {
   text-align: center;
   grid-column: 1 / -1;
-  padding: 2rem;
-  font-size: 1.2rem;
+  padding: 1.5rem;
+  font-size: 1rem;
   color: #666;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/* ✅ Responsive tweaks */
+@media (max-width: 1024px) {
   .vehicle-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 3 per row */
   }
 }
 
+@media (max-width: 768px) {
+  .vehicle-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* 2–3 per row */
+    gap: 0.8rem;
+  }
+
+  .vehicle-image-container {
+    height: 120px;
+  }
+
+  .vehicle-details h2 {
+    font-size: 0.95rem;
+  }
+}
+
+/* ✅ On phones: show only name + price */
 @media (max-width: 480px) {
   .stock-page {
     padding: 1rem;
   }
-  
+
   .vehicle-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 0.8rem;
   }
-  
+
+  .vehicle-image-container {
+    height: 110px;
+  }
+
   .vehicle-details {
-    padding: 1rem;
+    padding: 0.6rem;
+  }
+
+  .vehicle-details h2 {
+    font-size: 0.9rem;
+  }
+
+  /* 🔥 Hide specs and extra info on small screens */
+  .vehicle-details .specs-grid p:not(:last-child),
+  .vehicle-details .specs-grid strong:not(:last-child) {
+    display: none;
+  }
+
+  /* Keep only name + price visible */
+  .vehicle-details .specs-grid p:last-child {
+    display: block;
+    font-weight: bold;
+    color: #000;
+    font-size: 0.95rem;
   }
 }
+
+
 
 /* tax-page.css */
 /* tax-page.css */
@@ -771,4 +815,31 @@ button:hover {
   .inquiry-form {
     padding: 1.5rem;
   }
+}
+
+/* ===== PAGINATION STYLES ===== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 0.5rem;
+}
+
+.pagination button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.pagination button:hover {
+  background: #2980b9;
+}
+
+.pagination button.active {
+  background: #2c3e50;
 }

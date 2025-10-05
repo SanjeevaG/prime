@@ -233,5 +233,123 @@ export const carInventory = [
             '/pictures/stock/honda/vezel/vezelZ/vz4.jpeg',
             '/pictures/stock/honda/vezel/vezelZ/vz5.jpeg'
         ]
+    }, {
+        make: 'Honda',
+        model: 'Vezel Z Play',
+        year: '2025',
+        type: 'SUV',
+        price: 'Rs 24.5million',
+        mileage: '0 kms',
+        color: 'White',
+        transmission: 'Automatic',
+        fuelType: 'Hybrid',
+        engine: '1500cc',
+        images: [
+            './pictures/stock/honda/vezel/Zplay/vzp11.jpg',
+            './pictures/stock/honda/vezel/Zplay/vzp12.jpg',
+            './pictures/stock/honda/vezel/Zplay/vzp13.jpg',
+            './pictures/stock/honda/vezel/Zplay/vzp14.jpg',
+            './pictures/stock/honda/vezel/Zplay/vzp15.jpg',
+
+
+
+
+                       
+        ]
+    }
+    ,
+    {
+        make: 'Volkswagen',
+        model: 'T - Cross',
+        year: '2024',
+        type: 'SUV',
+        price: '2.2 MIll Yen',
+        mileage: '15,432 kms',
+        color: 'Blue',
+        transmission: 'Automatic',
+        fuelType: 'Petrol',
+        engine: '1000cc',
+        images: [
+            './pictures/stock/vw/tc1.jpeg',
+             './pictures/stock/vw/tc2.jpeg',
+              './pictures/stock/vw/tc3.jpeg',
+               './pictures/stock/vw/tc4.jpeg',
+                './pictures/stock/vw/tc5.jpeg',
+        ]
+    },
+        {
+        make: 'Honda',
+        model: 'Vezel',
+        year: '2023',
+        type: 'X hunt',
+        price: '3.1 Mill Yen',
+        mileage: '23800 kms',
+        color: 'Black',
+        transmission: 'Automatic',
+        fuelType: 'Hybrid',
+        engine: '1500 cc',
+        images: [
+             './pictures/stock/honda/vezel/xhunt/vb1.jpg',
+              './pictures/stock/honda/vezel/xhunt/vb2.jpg',
+               './pictures/stock/honda/vezel/xhunt/vb3.jpg',
+                './pictures/stock/honda/vezel/xhunt/vb4.jpg',
+                 './pictures/stock/honda/vezel/xhunt/vb5.jpg',
+        ]
+    },
+    {
+        make: 'BMW',
+        model: '3 Series',
+        year: '2023',
+        type: 'Sedan',
+        price: '$45,999',
+        mileage: '7,654 miles',
+        color: 'Gray',
+        transmission: 'Automatic',
+        fuelType: 'Gasoline',
+        engine: '2.0L Turbo 4-cylinder',
+        images: [
+            './pictures/stock/honda/vezel/xhunt/vb1.jpg',
+              './pictures/stock/honda/vezel/xhunt/vb2.jpg',
+               './pictures/stock/honda/vezel/xhunt/vb3.jpg',
+                './pictures/stock/honda/vezel/xhunt/vb4.jpg',
+                 './pictures/stock/honda/vezel/xhunt/vb5.jpg',
+        ]
+    }, {
+        make: 'BMW',
+        model: '3 Series',
+        year: '2023',
+        type: 'Sedan',
+        price: '$45,999',
+        mileage: '7,654 miles',
+        color: 'Gray',
+        transmission: 'Automatic',
+        fuelType: 'Gasoline',
+        engine: '2.0L Turbo 4-cylinder',
+        images: [
+             './pictures/stock/honda/vezel/xhunt/vb1.jpg',
+              './pictures/stock/honda/vezel/xhunt/vb2.jpg',
+               './pictures/stock/honda/vezel/xhunt/vb3.jpg',
+                './pictures/stock/honda/vezel/xhunt/vb4.jpg',
+                 './pictures/stock/honda/vezel/xhunt/vb5.jpg',
+        ]
+    },
+    {
+        make: 'Nissan',
+        model: '3 Series',
+        year: '2023',
+        type: 'Sedan',
+        price: '$45,999',
+        mileage: '7,654 miles',
+        color: 'Gray',
+        transmission: 'Automatic',
+        fuelType: 'Gasoline',
+        engine: '2.0L Turbo 4-cylinder',
+        images: [
+          './pictures/stock/honda/vezel/vezelZ/vz1.jpeg',
+            '/pictures/stock/honda/vezel/vezelZ/vz2.jpeg',
+            '/pictures/stock/honda/vezel/vezelZ/vz3.jpeg',
+            '/pictures/stock/honda/vezel/vezelZ/vz4.jpeg',
+            '/pictures/stock/honda/vezel/vezelZ/vz5.jpeg'
+        ]
     }
 ];
