@@ -498,8 +498,7 @@ button:hover {
   }
 }
 /* ===== STOCK PAGE SPECIFIC STYLES ===== */
-/* These styles will only affect the stock page */
-
+/* ===== STOCK PAGE SPECIFIC STYLES ===== */
 .stock-page {
   padding: 1.5rem;
   max-width: 1400px;
@@ -513,7 +512,7 @@ button:hover {
   color: #333;
 }
 
-/* ✅ Compact grid — more cars visible */
+/* Compact grid — more cars visible */
 .vehicle-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -521,7 +520,7 @@ button:hover {
   padding: 0.5rem;
 }
 
-/* ✅ Smaller vehicle card design */
+/* Smaller vehicle card design */
 .vehicle-card {
   background: white;
   border-radius: 8px;
@@ -535,7 +534,7 @@ button:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* ✅ Smaller image container */
+/* Smaller image container */
 .vehicle-image-container {
   width: 100%;
   height: 130px;
@@ -563,7 +562,7 @@ button:hover {
   color: #222;
 }
 
-/* ✅ Compact text layout */
+/* Specs grid */
 .specs-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -580,24 +579,16 @@ button:hover {
   color: #333;
 }
 
-.no-vehicles {
-  text-align: center;
-  grid-column: 1 / -1;
-  padding: 1.5rem;
-  font-size: 1rem;
-  color: #666;
-}
-
-/* ✅ Responsive tweaks */
+/* Responsive tweaks */
 @media (max-width: 1024px) {
   .vehicle-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 3 per row */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
 
 @media (max-width: 768px) {
   .vehicle-grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* 2–3 per row */
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 0.8rem;
   }
 
@@ -610,14 +601,14 @@ button:hover {
   }
 }
 
-/* ✅ On phones: show only name + price */
+/* Small screens: show only model + cc + price */
 @media (max-width: 480px) {
   .stock-page {
     padding: 1rem;
   }
 
   .vehicle-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
   }
 
@@ -633,13 +624,14 @@ button:hover {
     font-size: 0.9rem;
   }
 
-  /* 🔥 Hide specs and extra info on small screens */
-  .vehicle-details .specs-grid p:not(:last-child),
-  .vehicle-details .specs-grid strong:not(:last-child) {
+  /* Hide all specs except CC and price */
+  .vehicle-details .specs-grid p,
+  .vehicle-details .specs-grid strong {
     display: none;
   }
 
-  /* Keep only name + price visible */
+  /* Show only CC (first <p>) and price (last <p>) */
+  .vehicle-details .specs-grid p:first-child,
   .vehicle-details .specs-grid p:last-child {
     display: block;
     font-weight: bold;
@@ -647,7 +639,6 @@ button:hover {
     font-size: 0.95rem;
   }
 }
-
 
 
 /* tax-page.css */
