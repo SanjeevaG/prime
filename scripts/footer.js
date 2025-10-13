@@ -9,7 +9,7 @@ export function footer() {
     socialLinks.className = 'social-links';
 
     const links = [
-        { href: 'https://www.facebook.com', icon: '../pictures/f.png', alt: 'Facebook' },
+        { href: 'https://www.facebook.com/profile.php?id=61577365516455', icon: '../pictures/f.png', alt: 'Facebook' },
         { href: 'https://www.twitter.com', icon: '../pictures/x.png', alt: 'X' },
         { href: 'https://www.instagram.com', icon: '../pictures/i.png', alt: 'Instagram' }
     ];

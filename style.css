@@ -4,8 +4,9 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: 'Roboto Slab', serif;
-  background-color: #ffffc5;
+  background-color: #227db1;
   color: #333;
+
 }
 
 .page-container {
@@ -61,6 +62,7 @@ body, html {
 .nav-links li a:hover {
   background-color: #444;
   border-radius: 5px;
+  color: #fa003f;
 }
 
 /* FOOTER */
@@ -124,21 +126,49 @@ body, html {
 }
 
 /* SEARCH SECTION */
+/* ===== SEARCH SECTION WITH BANNER ===== */
 .search-section {
+  position: relative; /* Required for overlay positioning */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
   align-items: center;
-  padding: 20px 10px;
-  background: transparent;
+  padding: 40px 20px;
+
+  /* Background banner */
+  background-image: url('./pictures/j3.jpeg'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire section */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white; /* Text color for visibility */
 }
 
+/* Overlay for better text readability */
+.search-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+  z-index: 0;
+}
+
+.search-section * {
+  position: relative; /* Keep content above overlay */
+  z-index: 1;
+}
+
+/* Heading style */
 .search-section h2 {
   grid-column: 1 / -1;
   margin-bottom: 10px;
-  color: #2c3e50;
+  color: white;
 }
 
+/* Form controls */
 select, input {
   padding: 12px;
   border: 1px solid #ddd;
@@ -148,6 +178,7 @@ select, input {
   box-sizing: border-box;
 }
 
+/* Button style */
 button {
   padding: 12px 20px;
   background-color: #3498db;
@@ -162,6 +193,19 @@ button {
 button:hover {
   background-color: #2980b9;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-section {
+    padding: 30px 15px;
+  }
+
+  select, input, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
 
 /* NEWS SECTION */
 .news-section {

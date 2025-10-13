@@ -18,7 +18,7 @@ export function header() {
     const ul = document.createElement('ul');
     ul.className = 'nav-links';
 
-    const links = ['Home', 'Stock', 'Tax', 'Contact Us'];
+    const links = ['Home', 'JDM Stock','Local Stock', 'Average Price', 'Contact Us'];
     links.forEach(linkText => {
         const li = document.createElement('li');
         const a = document.createElement('a');
@@ -33,7 +33,7 @@ export function header() {
             case 'Home':	window.location.reload();
                             
                 break;
-       case 'Stock':
+       case 'JDM Stock':
     import('./stock.js')
         .then(module => {
             module.renderStockPage();
@@ -46,10 +46,10 @@ export function header() {
             document.body.appendChild(main);
         });
     break;
-            case 'Tax':
-                import('./tax.js')
+            case 'Average Price':
+                import('./vp.js')
         .then(module => {
-            module.renderTaxPage();
+            module.renderStockPage();
         })
         .catch(error => {
             console.error('Error loading stock module:', error);
@@ -63,6 +63,19 @@ export function header() {
                     import('./contact.js')
         .then(module => {
             module.renderContactPage();
+        })
+        .catch(error => {
+            console.error('Error loading stock module:', error);
+            // Fallback content if module fails to load
+            const main = document.createElement('main');
+            main.innerHTML = '<p>Error loading stock page. Please try again.</p>';
+            document.body.appendChild(main);
+        });
+    break;
+    case 'Local Stock':
+                    import('./local.js')
+        .then(module => {
+            module.renderStockPage();
         })
         .catch(error => {
             console.error('Error loading stock module:', error);

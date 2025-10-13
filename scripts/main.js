@@ -129,36 +129,67 @@ function mainContent() {
 
     newsSection.append(newsTitle, newsList);
 
-    // --- Featured Section ---
+      // --- Featured Section ---
     const featuredSection = document.createElement('section');
     featuredSection.className = 'featured-section';
 
     const featuredTitle = document.createElement('h2');
-    featuredTitle.textContent = 'Featured Vehicles';
+    featuredTitle.textContent = 'Ready to Ship Vehicles';
+    featuredTitle.style.color= '#ffffff';
 
     const carGrid = document.createElement('div');
-    carGrid.className = 'car-grid';
+    carGrid.className = 'vehicle-grid';
 
-    carInventory.slice(0, 20).forEach(car => {
+    carInventory.filter(car => car.rs === true).slice(0, 20).forEach(car => {
         const carCard = document.createElement('div');
-        carCard.className = 'car-card';
+        carCard.className = 'vehicle-card'; // ✅ Changed to match stock page
 
-        const carImage = document.createElement('div');
-        carImage.className = 'car-image';
-        carImage.style.backgroundImage = `url(${car.images[0]})`;
+        const imgContainer = document.createElement('div');
+        imgContainer.className = 'vehicle-image-container'; // ✅ Added container like stock page
+
+        const carImage = document.createElement('img'); // ✅ Changed from div to img
+        carImage.className = 'vehicle-image'; // ✅ Changed to match stock page
+        carImage.src = car.images[0];
+        carImage.alt = `${car.make} ${car.model}`;
+        imgContainer.appendChild(carImage); // ✅ Wrap image in container
 
         const carInfo = document.createElement('div');
-        carInfo.className = 'car-info';
+        carInfo.className = 'vehicle-details'; // ✅ Changed to match stock page
 
-        const carName = document.createElement('h3');
-        carName.textContent = `${car.make} ${car.model} ${car.year}`;
+        const carName = document.createElement('h2'); // ✅ Changed from h3 to h2 like stock page
+        carName.textContent = `${car.make} ${car.model} (${car.year})`;
+
+        const specs = document.createElement('div');
+        specs.className = 'specs-grid'; // ✅ Added specs grid like stock page
 
         const carPrice = document.createElement('p');
-        carPrice.className = 'car-price';
-        carPrice.textContent = car.price;
+        carPrice.innerHTML = `<strong>Price:</strong> ${car.price}`;
 
-        carInfo.append(carName, carPrice);
-        carCard.append(carImage, carInfo);
+        const carMileage = document.createElement('p');
+        carMileage.innerHTML = `<strong>Mileage:</strong> ${car.mileage}`;
+
+        const carColor = document.createElement('p');
+        carColor.innerHTML = `<strong>Color:</strong> ${car.color}`;
+
+        const carTransmission = document.createElement('p');
+        carTransmission.innerHTML = `<strong>Transmission:</strong> ${car.transmission}`;
+
+        const carFuelType = document.createElement('p');
+        carFuelType.innerHTML = `<strong>Fuel Type:</strong> ${car.fuelType}`;
+
+        const carEngine = document.createElement('p');
+        carEngine.innerHTML = `<strong>Engine:</strong> ${car.engine}`;
+
+        // ✅ Append all specs like stock page
+        specs.appendChild(carPrice);
+        specs.appendChild(carMileage);
+        specs.appendChild(carColor);
+        specs.appendChild(carTransmission);
+        specs.appendChild(carFuelType);
+        specs.appendChild(carEngine);
+
+        carInfo.append(carName, specs); // ✅ Added specs to carInfo
+        carCard.append(imgContainer, carInfo); // ✅ Added container and details
         carGrid.appendChild(carCard);
 
         // --- Dynamic car page load ---
