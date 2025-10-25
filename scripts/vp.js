@@ -2,7 +2,7 @@ import { carInventory as stockInventory } from './vpdata.js';
 import { carInventory as modelInventory } from './vppdata.js';
 import { createCarLayout } from './vpp.js';
 
-const ITEMS_PER_PAGE = 12;
+const ITEMS_PER_PAGE = 13;
 
 function clearPageContent() {
   const header = document.querySelector('header');

@@ -22,7 +22,7 @@ export const carInventory = [
         fuelType: 'Petrol',
         engine: '990cc',
         images: [
-            './pictures/stock/toyota/yaris/g/g.jpg',
+            './pictures/stock/toyota/yaris/x/yrx1.jpeg',
        ]
     },
         {
@@ -51,6 +51,34 @@ export const carInventory = [
             './pictures/stock/toyota/yariscross/zadventure/zah1.jpeg',
             ]
     },
+     
+     {
+        make: 'Toyota - 150 Series',
+        model: 'Prado TX,LX',
+        year: '2023-2024',
+        type: 'SUV',
+        price: '53 million upwards',
+        transmission: 'Automatic',
+        fuelType: 'Petrol',
+        engine: '2700cc',
+        images: [
+            './pictures/stock/toyota/prado/150/p15011.jpg',
+                     ]
+    },
+      
+     {
+        make: 'Toyota - 250',
+        model: 'Prado ',
+        year: '2024 - 2025',
+        type: 'SUV',
+        price: '57 million upwards',
+        transmission: 'Automatic',
+        fuelType: 'Petrol',
+        engine: '2700cc',
+        images: [
+            './pictures/stock/toyota/prado/250/pr2501.jpeg',
+                     ]
+    },
         {
         make: 'Honda',
         model: 'Vezel X, Z , Z play ',
@@ -67,14 +95,14 @@ export const carInventory = [
     }, {
         make: 'Suzuki',
         model: 'Alto',
-        year: '2023-2024',
+        year: '2023-2025',
         type: 'Hatch back',
         price: 'Rs5.7million upwards',
         transmission: 'Automatic',
         fuelType: 'Petrol',
         engine: '660cc',
         images: [
-            './pictures/stock/honda/vezel/Zplay/vzp11.jpg',
+              './pictures/stock/suzuki/alto/al1.jpeg',
                                  
         ]
     }
@@ -82,14 +110,14 @@ export const carInventory = [
     {
         make: 'Suzuki',
         model: 'Wagon R',
-        year: '2023-2024',
+        year: '2023-2025',
         type: 'Hatch back',
         price: 'Rs 6.1 million upwards',
         transmission: 'Automatic',
         fuelType: 'Petrol',
         engine: '660cc',
         images: [
-            './pictures/stock/honda/vezel/Zplay/vzp11.jpg',
+             './pictures/stock/suzuki/wagonr/wr1.jpg',
                                  
         ]
     }
@@ -97,14 +125,14 @@ export const carInventory = [
     {
         make: 'Suzuki',
         model: 'Swift',
-        year: '2023-2024',
+        year: '2023-2025',
         type: 'Hatch back',
         price: 'Rs 10.0 million upwards',
         transmission: 'Automatic',
         fuelType: 'Hybrid',
         engine: '1200cc',
         images: [
-            './pictures/stock/honda/vezel/Zplay/vzp11.jpg',
+            './pictures/stock/suzuki/swift/sw1.jpeg',
                                  
         ]
     }
@@ -112,14 +140,14 @@ export const carInventory = [
     {
         make: 'Dihatsu',
         model: 'Mira',
-        year: '2023-2024',
+        year: '2023-2025',
         type: 'Hatch back',
         price: 'Rs 5.8 million upwards',
         transmission: 'Automatic',
         fuelType: 'Petrol',
         engine: '660cc',
         images: [
-            './pictures/stock/honda/vezel/Zplay/vzp11.jpg',
+             './pictures/stock/dihatsu/mira/mr1.jpeg',
                                  
         ]
     }
@@ -127,14 +155,30 @@ export const carInventory = [
     {
         make: 'Dihatsu',
         model: 'Rocky',
-        year: '2023-2024',
+        year: '2023-2025',
         type: 'SUV',
         price: 'Rs 10 million upwards',
         transmission: 'Automatic',
         fuelType: 'Petrol',
         engine: '1000cc',
         images: [
-            './pictures/stock/honda/vezel/Zplay/vzp11.jpg',
+            './pictures/stock/dihatsu/rckyp/rck1.jpeg',
+                                 
+        ]
+    }
+    ,
+    ,
+    {
+        make: 'Dihatsu',
+        model: 'Rocky',
+        year: '2023-2025',
+        type: 'SUV',
+        price: 'Rs 11.5 million upwards',
+        transmission: 'Automatic',
+        fuelType: 'Hybrid',
+        engine: '1200cc',
+        images: [
+            './pictures/stock/dihatsu/rocky/rch1.jpeg',
                                  
         ]
     }
@@ -149,7 +193,35 @@ export const carInventory = [
         fuelType: 'Petrol',
         engine: '1000cc',
         images: [
-            './pictures/stock/vw/tc1.jpeg',
+            './pictures/stock/vw/tcross/tc1.jpg',
+                     ]
+    }
+    ,
+     {
+        make: 'Nissan',
+        model: 'Days',
+        year: '2023-2025',
+        type: 'SUV',
+        price: '6.1million upwards',
+        transmission: 'Automatic',
+        fuelType: 'Petrol',
+        engine: '660cc',
+        images: [
+            './pictures/stock/nissan/days/dy1.jpeg',
+                     ]
+    }
+    ,
+     {
+        make: 'Nissan',
+        model: 'Aura',
+        year: '2023-2025',
+        type: 'SUV',
+        price: '95 million upwards',
+        transmission: 'Automatic',
+        fuelType: 'Hybrid-Epower',
+        engine: '1200cc',
+        images: [
+            './pictures/stock/nissan/aura/ar1.jpeg',
                      ]
     }
  

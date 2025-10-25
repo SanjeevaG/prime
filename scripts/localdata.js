@@ -1,58 +1,28 @@
 export const carInventory = [
     {
-        make: 'Toyota',
-        model: 'Raize Z',
+        make: 'Dihatsu',
+        model: 'Mira-Es',
         year: '2025',
-        type: 'SUV',
-        price: 'Rs 14million',
-        mileage: '0kms',
-        color: 'Pearl',
+        type: 'Hatch back',
+        price: 'Rs 6.7 million ',
         transmission: 'Automatic',
-        fuelType: 'Hybrid',
-        engine: '1200cc',
-        images: [
-            './pictures/stock/toyota/raize/hybrid/z/wz1.jpg',
-            './pictures/stock/toyota/raize/hybrid/z/wz2.jpg',
-            './pictures/stock/toyota/raize/hybrid/z/wz3.jpg',
-            './pictures/stock/toyota/raize/hybrid/z/wz4.jpg',
-            './pictures/stock/toyota/raize/hybrid/z/wz5.jpg'
-        ]
-    },
-    {
-        make: 'Toyota',
-        model: 'Raize G',
-        year: '2023',
-        type: 'SUV',
-        price: 'Rs 11.5million',
-        mileage: '9000kms',
-        color: 'Pearl',
-        transmission: 'Automatic',
+        mileage: '5000 kms',
         fuelType: 'Petrol',
-        engine: '990cc',
+        color:'Metallic-Blue',
+        engine: '660cc',
         images: [
-            './pictures/stock/toyota/raize/nonhybrid/g/rg21.jpg',
-            './pictures/stock/toyota/raize/nonhybrid/g/rg22.jpg',
-            './pictures/stock/toyota/raize/nonhybrid/g/rg25.jpg'
-           
-        ]
-    },
-    {
-        make: 'Toyota',
-        model: 'Raize G',
-        year: '2023',
-        type: 'SUV',
-        price: 'Rs 11.5million',
-        mileage: '15000kms',
-        color: 'Pearl',
-        transmission: 'Automatic',
-        fuelType: 'Petrol',
-        engine: '990cc',
-        images: [
-            './pictures/stock/toyota/raize/nonhybrid/g/rg11.jpg',
-            './pictures/stock/toyota/raize/nonhybrid/g/rg12.jpg',
-            './pictures/stock/toyota/raize/nonhybrid/g/rg13.jpg',
-            './pictures/stock/toyota/raize/nonhybrid/g/rg14.jpg',
-            './pictures/stock/toyota/raize/nonhybrid/g/rg15.jpg'
+            './pictures/stock/dihatsu/mira/mr1/OT375133-5.jpg',
+            './pictures/stock/dihatsu/mira/mr1/OT375133-6.jpg',
+            './pictures/stock/dihatsu/mira/mr1/OT375133-7.jpg',
+            './pictures/stock/dihatsu/mira/mr1/OT375133-8.jpg',
+            './pictures/stock/dihatsu/mira/mr1/OT375133-9.jpg',
+            './pictures/stock/dihatsu/mira/mr1/OT375133-10.jpg',
+            './pictures/stock/dihatsu/mira/mr1/OT375133-11.jpg',
+            './pictures/stock/dihatsu/mira/mr1/OT375133-12.jpg',
+            './pictures/stock/dihatsu/mira/mr1/OT375133-13.jpg',
+            './pictures/stock/dihatsu/mira/mr1/OT375133-14.jpg',
+            './pictures/stock/dihatsu/mira/mr1/OT375133-15.jpg',
+
         ]
     }
 ];
