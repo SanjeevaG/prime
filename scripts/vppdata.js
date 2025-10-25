@@ -112,7 +112,7 @@ export const carInventory = [
         fuelType: 'Hybrid',
         engine: '1490cc',
         images: [
-            './pictures/stock/toyota/raize/nonhybrid/g/rg11.jpg',
+            './pictures/stock/toyota/yariscross/x/xhy1.jpeg',
             ]
     },
         {
@@ -125,19 +125,45 @@ export const carInventory = [
         fuelType: 'Hybrid',
         engine: '1490cc',
         images: [
-            './pictures/stock/toyota/raize/nonhybrid/g/rg11.jpg',
+            './pictures/stock/toyota/yariscross/g/ghy1.jpeg',
+            ]
+    }, 
+    {
+        make: 'Toyota',
+        model: 'Yaris Cross GR Sport',
+        year: '2023-2025',
+        type: 'SUV',
+        price: 'Rs 148million upwards',
+        transmission: 'Automatic',
+        fuelType: 'Hybrid',
+        engine: '1490cc',
+        images: [
+            './pictures/stock/toyota/yariscross/g/grhy1.jpeg',
             ]
     },    {
         make: 'Toyota',
         model: 'Yaris Cross Z',
         year: '2023-2025',
         type: 'SUV',
-        price: 'Rs 14.2million upwards',
+        price: 'Rs 14.5million upwards',
         transmission: 'Automatic',
         fuelType: 'Hybrid',
         engine: '1490cc',
         images: [
-            './pictures/stock/toyota/raize/nonhybrid/g/rg11.jpg',
+            './pictures/stock/toyota/yariscross/Z/zh1.jpeg',
+            ]
+    },
+        {
+        make: 'Toyota',
+        model: 'Yaris Cross Z Adventure',
+        year: '2023-2025',
+        type: 'SUV',
+        price: 'Rs 15 million upwards',
+        transmission: 'Automatic',
+        fuelType: 'Hybrid',
+        engine: '1490cc',
+        images: [
+            './pictures/stock/toyota/yariscross/zadventure/zah1.jpeg',
             ]
     },
         {
@@ -145,12 +171,12 @@ export const carInventory = [
         model: 'Vezel X',
         year: '2023-2025',
         type: 'SUV',
-        price: 'Rs 15 million upwards',
+        price: 'Rs 14 million upwards',
         transmission: 'Automatic',
         fuelType: 'Hybrid',
         engine: '1500cc',
         images: [
-            './pictures/stock/honda/vezel/vezelZ/vz11.jpeg',
+            './pictures/stock/honda/vezel/x/vx.jpeg',
                        
         ]
     },
@@ -173,7 +199,7 @@ export const carInventory = [
         model: 'Vezel Z premium',
         year: '2023-2025',
         type: 'SUV',
-        price: 'Rs 17.2 million upwards',
+        price: 'Rs 17.8 million upwards',
         transmission: 'Automatic',
         fuelType: 'Hybrid',
         engine: '1500cc',
@@ -192,7 +218,7 @@ export const carInventory = [
         fuelType: 'Hybrid',
         engine: '1500cc',
         images: [
-            './pictures/stock/honda/vezel/vezelZ/vz11.jpeg',
+            './pictures/stock/honda/vezel/Zplay/vzp12.jpg',
                        
         ]
     },
@@ -206,7 +232,7 @@ export const carInventory = [
         fuelType: 'Hybrid',
         engine: '1500cc',
         images: [
-            './pictures/stock/honda/vezel/vezelZ/vz11.jpeg',
+            './pictures/stock/honda/vezel/Zplay/zpp.jpeg',
                        
         ]
     },

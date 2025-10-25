@@ -115,10 +115,8 @@ function mainContent() {
     newsList.className = 'news-list';
 
     const newsItems = [
-        'New electric SUV models announced for next year.',
-        'Tips for maintaining your car during summer.',
-        'Upcoming auto show will feature concept vehicles.',
-        'Car loan rates expected to decrease this quarter.'
+        'New Buget new hopes will it give 5year range?'
+       
     ];
 
     newsItems.forEach(item => {
