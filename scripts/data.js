@@ -4,7 +4,7 @@ export const carInventory = [
         model: 'Raize Z',
         year: '2025',
         type: 'SUV',
-        price: 'Rs 14million',
+        price: 'Rs 13.5million',
         mileage: '0kms',
         color: 'Pearl',
         transmission: 'Automatic',
@@ -103,7 +103,7 @@ export const carInventory = [
     },
     {
         make: 'Honda',
-        model: 'Vezel Z ',
+        model: 'Vezel Z premium',
         year: '2024',
         type: 'SUV',
         price: 'Rs 17.5million',
